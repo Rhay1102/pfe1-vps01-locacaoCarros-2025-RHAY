@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Aluguel de Carros</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Aluguel de Carros</h1>
+    </header>
+
+    <section id="carrosDisponiveis">
+        <h2>Carros Disponíveis</h2>
+        <div class="carros-container" id="carrosContainer"></div>
+    </section>
+    <div id="carrosContainer"></div>
+
+    <!-- Modal -->
+    <div id="modalDetalhes" style="display:none;">
+      <h2 id="carroNome"></h2>
+      <div id="carroDetalhes"></div>
+      <button id="fecharModal">Fechar</button>
+    </div>
+    
+    <!-- Formulário -->
+    <form id="formularioLocacao">
+      <input type="text" id="nomeCliente" placeholder="Nome" required />
+      <input type="text" id="cpfCliente" placeholder="CPF" required />
+      <input type="date" id="dataInicio" required />
+      <input type="date" id="dataFim" required />
+      <select id="carroLocado" required></select>
+      <button type="submit">Confirmar Locação</button>
+    </form>
+    
+
+    <footer>
+        <p>© 2025 Sistema de Aluguel de Carros</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html

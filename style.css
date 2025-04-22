@@ -1,0 +1,126 @@
+/* Estilos gerais */
+body {
+    font-family: 'Courier', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #99DDFF;
+}
+
+header {
+    background-color: #003366;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h1, h2 {
+    margin: 0;
+    color: white;
+}
+
+/* Carros Disponíveis */
+.carros-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.carro {
+    background-color: #006699;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    color: white;
+    width: 200px;
+}
+
+.carro img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.carro button {
+    background-color: #00CCFF;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    overflow: auto;
+    padding-top: 60px;
+}
+
+.modal-conteudo {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+}
+
+.fechar {
+    color: #000;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Formulário de Locação */
+#formLocacao {
+    background-color: #003366;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    color: white;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form input, form select {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #00CCFF;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .carros-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #formLocacao {
+        margin: 10px;
+    }
+}
